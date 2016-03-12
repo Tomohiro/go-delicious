@@ -1,0 +1,9 @@
+vendors:
+- path: github.com/golang/protobuf
+  rev: 0fd8c908d872c921af513ef5091964bbd2e0d904
+- path: golang.org/x/net
+  rev: e7da8edaa52631091740908acaf2c2d4c9b3ce90
+- path: golang.org/x/oauth2
+  rev: 045497edb6234273d67dbc25da3f2ddbc4c4cacf
+- path: google.golang.org/appengine
+  rev: 12d5545dc1cfa6047a286d5e853841b6471f4c19
