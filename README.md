@@ -1,7 +1,7 @@
 go-delicious
 ================================================================================
 
-go-delicious is a library for Go for accessing the [Delicous API][]
+go-delicious is a library for Go for accessing the [Delicious API][]
 
 [Delicious API]: https://github.com/domainersuitedev/delicious-api
 
@@ -41,7 +41,7 @@ if err != nil {
 #### Fetch all bookmarks
 
 ```go
-list, _ := delicious.Posts.All(&delicious.FetchOptions{Start: 1, Resutls: 50})
+list, _ := delicious.Posts.All(&delicious.FetchOptions{Start: 1, Results: 50})
 for _, post := range *list.Posts {
 	fmt.Println(post.URL) // http://www.example.com/
 }
