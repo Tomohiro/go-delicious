@@ -18,6 +18,8 @@ type Client struct {
 
 	// Endpint is the Delicious API endpoint.
 	Endpoint string
+
+	Posts *PostsService
 }
 
 // NewClient returns a new Delicious API client.
@@ -36,6 +38,7 @@ func NewClient(token string) (*Client, error) {
 		client:   oauthClient,
 		Endpoint: apiEndpoint,
 	}
+	c.Posts = &PostsService{client: c}
 
 	return c, nil
 }
