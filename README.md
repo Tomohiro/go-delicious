@@ -23,6 +23,15 @@ $ go get -d github.com/Tomohiro/go-delicious
 Usage
 --------------------------------------------------------------------------------
 
+### Get an access token
+
+Create a your application at [Delicious application credential](https://delicious.com/oauth/applications) and get an access token:
+
+```sh
+$ curl -X POST "https://avosapi.delicious.com/api/v1/oauth/token?client_id=$DELICIOUS_CLIENT_ID&client_secret=$DELICIOUS_CLIENT_SECRET&grant_type=credentials&username=$DELICIOUS_USERNAME&password=$DELICIOUS_PASSWORD" | jq -r '.access_token'
+1936952-4dad55cd5ad5ad083942b8c6bafb24a9
+```
+
 ### Create a client to accessing the Delicious API
 
 Import this package like this:
@@ -31,7 +40,7 @@ Import this package like this:
 import "github.com/Tomohiro/go-delicious/delicious"
 ```
 
-Create a client with your [Delicious application credential](https://delicious.com/oauth/applications):
+Create a client with your access token:
 
 ```go
 delicious, err := delicious.NewClient("your access token")
