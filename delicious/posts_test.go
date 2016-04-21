@@ -32,14 +32,12 @@ func TestRecent(t *testing.T) {
 
 	mux.HandleFunc("/posts/recent", func(w http.ResponseWriter, r *http.Request) {
 		// Set response headers
-		// This example is response header that from https://gyazo.com/api/docs/image.
 		w.Header().Set("Content-Type", "application/xml")
 
 		// Set 200 OK as HTTP status code.
 		w.WriteHeader(http.StatusOK)
 
 		// Set response body
-		// This example is response body that from https://gyazo.com/api/docs/image.
 		fmt.Fprintln(w, `<?xml version="1.0" encoding="UTF-8"?>
 			<posts tag="" user="johndoe">
 				<post
