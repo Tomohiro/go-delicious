@@ -42,3 +42,10 @@ func NewClient(token string) (*Client, error) {
 
 	return c, nil
 }
+
+// Do sends an HTTP request and returns HTTP response via http.Client.
+//
+// https://golang.org/pkg/net/http/#Client.Do
+func (c *Client) Do(req *http.Request) (*http.Response, error) {
+	return c.client.Do(req)
+}
