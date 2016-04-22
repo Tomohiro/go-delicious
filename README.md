@@ -54,8 +54,8 @@ if err != nil {
 #### Fetch all bookmarks
 
 ```go
-list, _ := delicious.Posts.All(&delicious.FetchOptions{Start: 1, Results: 50})
-for _, post := range *list.Posts {
+posts, _ := delicious.Posts.All(&delicious.FetchOptions{Start: 1, Results: 50})
+for _, post := range *posts {
 	fmt.Println(post.URL) // http://www.example.com/
 }
 ```
@@ -63,8 +63,8 @@ for _, post := range *list.Posts {
 #### Get one or more bookmarks
 
 ```go
-list, _ := delicious.Posts.Get(&delicious.FetchOptions{Tag: "Programming"})
-for _, post := range *list.Posts {
+posts, _ := delicious.Posts.Get(&delicious.FetchOptions{Tag: "Programming"})
+for _, post := range *posts {
 	fmt.Println(post.URL) // http://www.example.com/
 ```
 
