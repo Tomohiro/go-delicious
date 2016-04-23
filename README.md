@@ -3,6 +3,7 @@ go-delicious
 
 [![Build Status](https://img.shields.io/travis/Tomohiro/go-delicious.svg?style=flat-square)](https://travis-ci.org/Tomohiro/go-delicious)
 [![Coverage Status](https://img.shields.io/coveralls/Tomohiro/go-delicious.svg?style=flat-square)](https://coveralls.io/github/Tomohiro/go-delicious)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Tomohiro/go-delicious?style=flat-square)](https://goreportcard.com/report/github.com/Tomohiro/go-delicious)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/Tomohiro/go-delicious/blob/master/LICENSE)
 
 go-delicious is a library for Go for accessing the [Delicious API][]
